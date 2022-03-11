@@ -33,7 +33,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(routes);
+// app.use(routes);
+
+app.get("/", (req, res) => {
+  //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
+  res.render("homepage");
+});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
