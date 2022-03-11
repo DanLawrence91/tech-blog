@@ -1,7 +1,5 @@
 # Tech Blog
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## Description
 
 This is a working CMS-style blog with authentication for users to sign up and log in/log out. The site can only be edited once the user is signed up and logged in. Then they can create a new blog post, comment on other blog posts, as well as edit and delete their own blog posts.
@@ -22,10 +20,6 @@ Clone the repo from github, and then run npm install to install the relevant dep
 ## Usage
 
 This project can be used to create, edit and delete blog posts, as well as comment on other users blog posts. These actions can only be completed if the user has signed up and logged in, if they haven't logged in then they will only be able to see the homepage.
-
-## License
-
-    This project is MIT licensed, please see the badge at the top of the page
 
 ## Questions
 
