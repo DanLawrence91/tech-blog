@@ -1,11 +1,11 @@
 body {
-  background-color: blue;
+  background-color: aqua;
 }
 
 h1 {
   color: red;
 }
 
-li {
-  color: yellow;
+li a {
+  color: black;
 }
