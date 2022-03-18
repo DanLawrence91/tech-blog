@@ -13,11 +13,12 @@ const newCommentHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace("/dashboard");
+      content.value = "";
+      window.location.reload();
     } else {
       alert("Failed to comment");
     }
   }
 };
 
-document.querySelector(".comment-form").addEventListener("submit", newCommentHandler);
+document.querySelector("#comment-form").addEventListener("submit", newCommentHandler);

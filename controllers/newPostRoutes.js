@@ -4,7 +4,7 @@ const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
   try {
-    res.render("new-post", { logged_in: true });
+    res.render("newPost", { logged_in: true });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -17,6 +17,10 @@ router.get("/:id", withAuth, async (req, res) => {
         {
           model: User,
           attributes: ["username"],
+        },
+        {
+          model: Comment,
+          attributes: ["content"],
         },
       ],
     });
