@@ -1,3 +1,20 @@
 li a {
   color: black;
+  font-weight: bold;
+}
+
+a {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.border-custom {
+  border: solid 2px;
+}
+
+#logout {
+  cursor: pointer;
 }

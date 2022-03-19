@@ -4,27 +4,39 @@
     <h2 class="d-inline">
       {{title}}
     </h2>
-    <p class="d-inline float-right">Posted by <strong>{{user.username}}</strong> on {{format_date createdAt}}</p>
+    <p class="d-inline float-right">Created by <strong>{{user.username}}</strong> on {{format_date createdAt}}</p>
   </div>
   <div class="p-2">
     <p>
       {{content}}
     </p>
   </div>
+</div>
+
+<div class="row mb-4 flex-column border border-secondary">
 
   <div>
-    <h3>Comments:</h3>
+    <div class="p-2 bg-secondary w-100">
+      <h3>Comments:</h3>
+    </div>
     {{#each comments as |comment|}}
-      <div class="p-2">
+      <div class="px-4 mt-2">
         <p>
+          -
           {{comment.content}}
+          <br />
+          <em>Posted by
+            {{user.username}}
+            on
+            {{format_date comment.createdAt}}
+          </em>
         </p>
-        <p>Posted by {{user.username}} on {{format_date comment.createdAt}}</p>
+        <p></p>
       </div>
     {{/each}}
   </div>
 
-  <div>
+  <div class="px-2">
     <form id="comment-form">
       <div class="p-2">
         <label for="comments">Leave a comment:</label>
@@ -35,7 +47,6 @@
       </div>
     </form>
   </div>
-
 </div>
 
 <script src="/js/comment.js"></script>
