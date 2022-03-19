@@ -1,0 +1,24 @@
+<div class="row mb-4 flex-column border border-secondary">
+
+  <div class="p-2 bg-secondary">
+    <h2>Title:</h2>
+    <textarea name="post-title" id="post-title" class="w-100" rows="1">
+      {{title}}
+    </textarea>
+    <p class="d-inline float-right">Posted by <strong>{{user.username}}</strong> on {{format_date createdAt}}</p>
+  </div>
+  <div class="p-2">
+    <form id="post-form">
+      <h2>Content:</h2>
+      <textarea name="post-content" id="post-content" class="w-100" rows="5">
+        {{content}}
+      </textarea>
+      <button class="btn btn-primary" id="update" type="submit" data-id="{{id}}">Update Post</button>
+      <button class="btn btn-primary" id="delete" data-id="{{id}}">Delete Post</button>
+    </form>
+
+  </div>
+
+</div>
+
+<script src="/js/update.js"></script>

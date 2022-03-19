@@ -1,4 +1,5 @@
 const updateButtonHandler = async (event) => {
+  const content = document.querySelector("#post-content").value.trim();
   if (event.target.hasAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");
 
@@ -34,6 +35,6 @@ const delButtonHandler = async (event) => {
   }
 };
 
-document.querySelector(".comment-form").addEventListener("submit", updateButtonHandler);
+document.querySelector("#update").addEventListener("click", updateButtonHandler);
 
-document.querySelector(".comment-form").addEventListener("click", delButtonHandler);
+document.querySelector("#delete").addEventListener("click", delButtonHandler);
