@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { User, Post, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
+//displays section to enter a new post
 router.get("/", withAuth, async (req, res) => {
   try {
     res.render("newPost", { logged_in: true });
@@ -10,6 +11,7 @@ router.get("/", withAuth, async (req, res) => {
   }
 });
 
+// displays a post along with associated comments
 router.get("/:id", withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {

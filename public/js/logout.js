@@ -1,3 +1,4 @@
+// event listener for user logging out and sending post request to log out, if successful will redirect user
 const logout = async () => {
   const response = await fetch("/api/user/logout", {
     method: "POST",

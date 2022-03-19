@@ -1,3 +1,4 @@
+// collects comments added to relevant section and sends a post request. if successful comment box clears and pages reloads to show comment
 const newCommentHandler = async (event) => {
   const content = document.querySelector("#comments").value.trim();
 

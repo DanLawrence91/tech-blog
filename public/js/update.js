@@ -1,3 +1,4 @@
+// user can update post by clicking this button to create a put request to add to the content of a post, if successful redirected back to dashboard
 const updateButtonHandler = async (event) => {
   const content = document.querySelector("#post-content").value.trim();
   if (event.target.hasAttribute("data-id")) {
@@ -19,6 +20,7 @@ const updateButtonHandler = async (event) => {
   }
 };
 
+// allows for a post to be deleted when clicking correct button
 const delButtonHandler = async (event) => {
   if (event.target.hasAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");

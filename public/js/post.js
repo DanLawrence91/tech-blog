@@ -1,3 +1,4 @@
+// user can post a new blog post, get value from form and send a post request. if successful redirected back to dashboard
 const newFormHandler = async (event) => {
   event.preventDefault();
 
