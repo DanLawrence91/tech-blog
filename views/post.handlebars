@@ -19,6 +19,7 @@
         <p>
           {{comment.content}}
         </p>
+        <p>Posted by {{user.username}} on {{format_date comment.createdAt}}</p>
       </div>
     {{/each}}
   </div>

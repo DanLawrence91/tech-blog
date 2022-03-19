@@ -20,7 +20,11 @@ router.get("/:id", withAuth, async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ["content"],
+          attributes: ["content", "createdAt"],
+          include: {
+            model: User,
+            attributes: ["username"],
+          },
         },
       ],
     });
