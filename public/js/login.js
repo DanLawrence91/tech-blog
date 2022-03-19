@@ -17,7 +17,8 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the homepage
       document.location.replace("/");
     } else {
-      alert(response.statusText);
+      const error = await response.json();
+      alert(error);
     }
   }
 };
@@ -25,9 +26,9 @@ const loginFormHandler = async (event) => {
 const signupFormHandler = async (event) => {
   event.preventDefault();
 
-  const username = document.querySelector("#username-signup").value.trim();
-  const email = document.querySelector("#email-signup").value.trim();
-  const password = document.querySelector("#password-signup").value.trim();
+  const username = document.querySelector("#username").value.trim();
+  const email = document.querySelector("#email").value.trim();
+  const password = document.querySelector("#password").value.trim();
 
   if (username && email && password) {
     const response = await fetch("/api/user", {
@@ -39,8 +40,11 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      alert(response.statusText);
+      const error = await response.json();
+      alert(error);
     }
+  } else {
+    alert("Please ensure you create a username, email and password");
   }
 };
 

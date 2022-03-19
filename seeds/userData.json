@@ -1,4 +1,27 @@
 [
-    
-  ]
-  
+  {
+    "username": "DL123",
+    "email": "dan@test.com",
+    "password": "password"
+  },
+  {
+    "username": "RugbyFan45",
+    "email": "rf45@test.com",
+    "password": "password"
+  },
+  {
+    "username": "EC29857",
+    "email": "ellie@test.com",
+    "password": "password"
+  },
+  {
+    "username": "vvds4789",
+    "email": "vvds@test.com",
+    "password": "password"
+  },
+  {
+    "username": "Rhinos48",
+    "email": "rhinos@test.com",
+    "password": "password"
+  }
+]

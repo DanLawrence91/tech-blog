@@ -1,3 +1,42 @@
 [
-    
-  ]
+  {
+    "user_id": 1,
+    "post_id": 4,
+    "content": "I can't believe they lost that one to the storm after the comeback they threatened"
+  },
+  {
+    "user_id": 2,
+    "post_id": 8,
+    "content": "Yeah bring a team to SA"
+  },
+  {
+    "user_id": 5,
+    "post_id": 8,
+    "content": "Nah, no fans there and better for SOO"
+  },
+  {
+    "user_id": 3,
+    "post_id": 7,
+    "content": "Come on the Dolphins!!!"
+  },
+  {
+    "user_id": 4,
+    "post_id": 2,
+    "content": "I don't know, never write them off"
+  },
+  {
+    "user_id": 3,
+    "post_id": 3,
+    "content": "What a win in round 1"
+  },
+  {
+    "user_id": 5,
+    "post_id": 6,
+    "content": "Can't believe the weather in the last few minutes, what a win to hold on to"
+  },
+  {
+    "user_id": 1,
+    "post_id": 5,
+    "content": "Repeats are hard, I dont think they will do it"
+  }
+]

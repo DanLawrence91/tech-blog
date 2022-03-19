@@ -1,3 +1,42 @@
 [
-    
-  ]
+  {
+    "user_id": 2,
+    "title": "Raiders year!",
+    "content": "After last years disappointment, the raiders are going all the way this year"
+  },
+  {
+    "user_id": 1,
+    "title": "Storm may be struggling",
+    "content": "With a few player losses and others arguing with the coach the storm may be struggling this year!"
+  },
+  {
+    "user_id": 3,
+    "title": "Knights have a hot start",
+    "content": "A great win over the roosters gave the knights the start to the season they need"
+  },
+  {
+    "user_id": 3,
+    "title": "Bunnies have a poor start",
+    "content": "Losing two of two is not the start the bunnies would have wanted"
+  },
+  {
+    "user_id": 5,
+    "title": "Can the panthers do a repeat?",
+    "content": "After last years final success can Penrith do it again"
+  },
+  {
+    "user_id": 4,
+    "title": "Bulldogs get a good away win",
+    "content": "The new signings are paying off for the bulldogs who got a good win over last seasons fellow strugglers the cowboys"
+  },
+  {
+    "user_id": 2,
+    "title": "I'm waiting for the Dolphins",
+    "content": "Who cares about this year, its all about Wayne and the Dolphins next season"
+  },
+  {
+    "user_id": 4,
+    "title": "Why is there another team in Brisbane",
+    "content": "Should bring one to South Australia and Adelaide!"
+  }
+]
