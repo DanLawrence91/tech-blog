@@ -17,8 +17,7 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the homepage
       document.location.replace("/");
     } else {
-      const error = await response.json();
-      alert(error);
+      alert(response.statusText);
     }
   }
 };
@@ -40,8 +39,7 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      const error = await response.json();
-      alert(error);
+      alert(response.statusText);
     }
   } else {
     alert("Please ensure you create a username, email and password");
