@@ -12,6 +12,8 @@ const updateButtonHandler = async (event) => {
       },
     });
 
+    console.log(response);
+
     document.location.replace("/dashboard");
   }
 };
