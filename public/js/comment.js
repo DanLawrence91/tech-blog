@@ -14,12 +14,7 @@ const newCommentHandler = async (event) => {
       },
     });
 
-    if (response.ok) {
-      content.value = "";
-      window.location.reload();
-    } else {
-      alert("Failed to comment");
-    }
+    document.location.reload();
   }
 };
 
