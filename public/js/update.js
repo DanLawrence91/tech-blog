@@ -12,11 +12,7 @@ const updateButtonHandler = async (event) => {
       },
     });
 
-    if (response.ok) {
-      document.location.replace("/dashboard");
-    } else {
-      alert("Failed to update post");
-    }
+    document.location.replace("/dashboard");
   }
 };
 
