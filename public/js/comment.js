@@ -1,8 +1,9 @@
 // collects comments added to relevant section and sends a post request. if successful comment box clears and pages reloads to show comment
 const newCommentHandler = async (event) => {
+  event.preventDefault();
   const content = document.querySelector("#comments").value;
 
-  const id = event.target.getAttribute("data-id");
+  const id = location.pathname.split("/")[2];
   console.log(id);
 
   if (content) {
