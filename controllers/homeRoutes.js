@@ -4,13 +4,13 @@ const { User, Post } = require("../models");
 // get all current posts on homepage
 router.get("/", async (req, res) => {
   try {
-    const postData = await Post.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ["username"],
-        },
-      ],
+    const postData = await User.findAll({
+      // include: [
+      //   {
+      //     model: User,
+      //     attributes: ["username"],
+      //   },
+      // ],
     });
     const posts = postData.map((post) => post.get({ plain: true }));
 
