@@ -1,20 +1,21 @@
 // user can update post by clicking this button to create a put request to add to the content of a post, if successful redirected back to dashboard
 const updateButtonHandler = async (event) => {
-  const content = document.querySelector("#post-content").value.trim();
+  const title = document.querySelector("#post-title").value;
+  const content = document.querySelector("#post-content").value;
   if (event.target.hasAttribute("data-id")) {
     const id = event.target.getAttribute("data-id");
 
     const response = await fetch(`/api/post/${id}`, {
       method: "PUT",
-      body: JSON.stringify({ content }),
+      body: JSON.stringify({ id, title, content }),
       headers: {
         "Content-Type": "application/json",
       },
     });
 
-    console.log(response);
-
-    document.location.replace("/dashboard");
+    if (response) {
+      document.location.replace("/dashboard");
+    }
   }
 };
 
@@ -27,10 +28,8 @@ const delButtonHandler = async (event) => {
       method: "DELETE",
     });
 
-    if (response.ok) {
+    if (response) {
       document.location.replace("/dashboard");
-    } else {
-      alert("Failed to delete post");
     }
   }
 };
