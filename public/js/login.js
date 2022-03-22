@@ -15,8 +15,10 @@ const loginFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      alert(response.statusText);
+      alert("Incorrect username or password");
     }
+  } else {
+    alert("You must enter both username and password");
   }
 };
 
@@ -37,10 +39,10 @@ const signupFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace("/");
     } else {
-      alert(response.statusText);
+      alert("Please ensure you create a unique username, email and password");
     }
   } else {
-    alert("Please ensure you create a username, email and password");
+    alert("Please fill out all sign-up boxes");
   }
 };
 
