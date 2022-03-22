@@ -36,11 +36,12 @@ router.put("/:id", withAuth, async (req, res) => {
 });
 
 // delete a current post
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
     const postData = await Post.destroy({
       where: {
         id: req.params.id,
+        user_id: req.session.user_id,
       },
     });
 
