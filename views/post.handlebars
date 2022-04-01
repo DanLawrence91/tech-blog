@@ -6,7 +6,7 @@
     </h2>
     <p class="d-inline float-right">Created by <strong>{{user.username}}</strong> on {{format_date createdAt}}</p>
   </div>
-  <div class="p-2">
+  <div class="p-2 bkg">
     <p>
       {{content}}
     </p>
@@ -20,7 +20,7 @@
       <h3>Comments:</h3>
     </div>
     {{#each comments as |comment|}}
-      <div class="px-4 mt-2">
+      <div class="px-4 mt-2 bkg">
         <p>
           -
           {{comment.content}}
@@ -36,10 +36,10 @@
     {{/each}}
   </div>
 
-  <div class="px-2">
+  <div class="mt-4 p-2 form-bkg">
     <form id="comment-form">
       <div class="p-2">
-        <label for="comments">Leave a comment:</label>
+        <label for="comments" class="font-weight-bold">Leave a comment:</label>
         <textarea class="w-100" name="comments" id="comments" rows="5"></textarea>
       </div>
       <div class="p-2">

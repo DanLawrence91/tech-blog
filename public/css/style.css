@@ -18,3 +18,28 @@ a:visited {
 #logout {
   cursor: pointer;
 }
+
+.home {
+  background-image: url("../assets/thomas-serer-QUr0R1VZPNw-unsplash.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-repeat:no-repeat; */
+  height: 100vh;
+}
+
+.bkg {
+  background-color: white;
+  padding: 5px;
+}
+
+.form-bkg {
+  background-color: #6c757d;
+}
+
+.login {
+  opacity: 0.8;
+  background-color: black;
+  color: white;
+}

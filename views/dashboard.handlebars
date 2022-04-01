@@ -3,14 +3,14 @@
 </section>
 
 <section class="post-list mt-4">
-  <h3>Here are your current posts:</h3>
+  <h3 class="text-center">Here are your current posts:</h3>
 
   {{#each posts as |post|}}
     <div class="row mb-4 flex-column border-secondary border-custom">
       <div class="border-secondary border-custom p-2 bg-secondary">
         <h4><a href="/update/{{post.id}}">{{post.title}}</a></h4>
       </div>
-      <div class="px-2 my-1">
+      <div class="px-2 my-1 bkg">
         <p>{{post.content}}</p>
       </div>
     </div>
